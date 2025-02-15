@@ -119,7 +119,7 @@
 &trans  &trans     &trans    &trans             &trans                &trans                                                                 &trans    &trans    &trans    &trans        &trans     &trans
 &trans  &kp TAB    &swap     &sk LS(LA(LCTRL))  &sk LS(LA(LC(LGUI)))  &kp LG(LC(LS(LA(Z))))                                                  &trans    &trans    &kp UP    &trans        &kp DEL    &trans
 &trans  &sk LCTRL  &sk LALT  &sk LGUI           &sk LSHFT             &kp LA(LC(LS(LG(X))))                                                  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans     &trans    &kp BACKSPACE      &kp KP_ENTER          &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &kp RET    &trans
+&trans  &trans     &trans    &kp BACKSPACE      &kp ENTER             &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &kp RET    &trans
 &trans  &trans     &trans    &trans             &trans                                       &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans    &trans        &trans     &trans
             >;
         };
