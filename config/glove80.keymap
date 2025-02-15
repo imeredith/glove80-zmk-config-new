@@ -40,11 +40,13 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
-       swap: swapper {
+
+        swap: swapper {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+
             ignored-key-positions = <1>;
         };
     };
@@ -91,7 +93,7 @@
 
         Base {
             bindings = <
-&swap       &none  &none  &none  &none                                                                  &none  &none      &none    &none     &none
+&none       &none  &none  &none  &none                                                                  &none  &none      &none    &none     &none
 &none       &none  &none  &none  &none  &none                                                    &none  &none  &none      &none    &none     &none
 &none       &kp Q  &kp W  &kp F  &kp P  &kp B                                                    &kp J  &kp L  &kp U      &kp Y    &kp SQT   &none
 &none       &kp A  &kp R  &kp S  &kp T  &kp G                                                    &kp M  &kp N  &kp E      &kp I    &kp O     &none
@@ -113,12 +115,12 @@
 
         nav {
             bindings = <
-&trans  &trans     &trans    &trans    &trans                                                                       &trans    &trans    &trans     &trans    &trans
-&trans  &trans     &trans    &trans    &trans     &trans                                                  &trans    &trans    &trans    &trans     &trans    &trans
-&trans  &kp TAB    &trans    &trans    &trans     &trans                                                  &trans    &trans    &kp UP    &trans     &kp DEL   &trans
-&trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &trans                                                  &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BSPC  &trans
-&trans  &trans     &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET   &trans
-&trans  &trans     &trans    &trans    &trans             &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans    &trans     &trans    &trans
+&trans  &trans     &trans    &trans             &trans                                                                                                            &trans    &trans    &trans     &trans    &trans
+&trans  &trans     &trans    &trans             &trans                &trans                                                                            &trans    &trans    &trans    &trans     &trans    &trans
+&trans  &kp TAB    &swap     &sk LS(LA(LCTRL))  &sk LS(LA(LC(LGUI)))  &kp LS(LG(LA(LC(LEFT_BRACKET))))                                                  &trans    &trans    &kp UP    &trans     &kp DEL   &trans
+&trans  &sk LCTRL  &sk LALT  &sk LGUI           &sk LSHFT             &kp LA(LC(LS(LG(RBKT))))                                                          &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BSPC  &trans
+&trans  &trans     &trans    &kp BACKSPACE      &kp KP_ENTER          &trans                            &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET   &trans
+&trans  &trans     &trans    &trans             &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans            &trans    &trans    &trans     &trans    &trans
             >;
         };
 
