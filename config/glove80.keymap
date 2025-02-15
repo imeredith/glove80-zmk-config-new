@@ -95,12 +95,12 @@
 
         sym {
             bindings = <
-&trans  &trans     &trans        &trans          &trans                                                                                       &trans                 &trans           &trans             &trans     &trans
-&trans  &trans     &trans        &trans          &trans                &trans                                                      &trans     &trans                 &trans           &trans             &trans     &trans
-&trans  &kp ESC    &kp LBKT      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE                                                   &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GRAVE  &trans
-&trans  &kp MINUS  &kp ASTERISK  &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR                                                  &trans     &trans                 &trans           &trans             &trans     &trans
-&trans  &trans     &trans        &trans          &trans                &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans                 &trans           &trans             &trans     &trans
-&trans  &trans     &trans        &trans          &trans                            &trans  &trans  &trans  &trans  &trans  &trans             &trans                 &trans           &trans             &trans     &trans
+&trans  &trans     &trans        &trans          &trans                                                                                        &trans                 &trans           &trans             &trans           &trans
+&trans  &trans     &trans        &trans          &trans                &trans                                                       &trans     &trans                 &trans           &trans             &trans           &trans
+&trans  &kp ESC    &kp LBKT      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp TILDE                                                    &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GRAVE        &trans
+&trans  &kp MINUS  &kp ASTERISK  &kp EQUAL       &kp UNDERSCORE        &kp DOLLAR                                                   &kp HASH   &kp LSHFT              &kp LGUI         &kp LALT           &kp LCTRL        &trans
+&trans  &kp PLUS   &kp PIPE      &kp AT          &kp SLASH             &kp PERCENT  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp BACKSLASH          &kp AMPERSAND    &kp QUESTION       &kp EXCLAMATION  &trans
+&trans  &trans     &trans        &trans          &trans                             &trans  &trans  &trans  &trans  &trans  &trans             &trans                 &trans           &trans             &trans           &trans
             >;
         };
 
